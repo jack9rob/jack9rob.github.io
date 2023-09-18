@@ -10,6 +10,7 @@
 <body>
 
   <!-- mobile nav-->
+  <!--
   <nav class="sm:collapse fixed m-2 top-0">
     <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
       <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -17,7 +18,6 @@
       </svg>
     </button>
   
-    <!-- Dropdown menu -->
     <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
       <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
         <li>
@@ -35,21 +35,40 @@
       </ul>
     </div>
   </nav>
-
+    -->
 
   <!-- desktop nav-->
   <nav
-    <div class="fixed top-0 w-screen flex h-16 items-center justify-center bg-blue-600 invisible sm:visible">
+    <div class="fixed top-0 w-screen flex h-9 sm:h-16 items-center justify-center sm:bg-blue-600 mt-2 sm:mt-0">
       <div class="flex space-x-4 sm:text-sm md:text-lg">
-        <a href="#" class="text-gray-200 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 font-medium">About Me</a>
-        <a href="#" class="text-gray-200 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 font-medium">Projects</a>
-        <a href="#" class="text-gray-200 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 font-medium">Contact</a>
+        <a href="#" class="text-gray-200 hover:bg-gray-700 bg-blue-600 rounded-md px-3 py-2 font-medium">About Me</a>
+        <a href="#" class="text-gray-200 hover:bg-gray-700 bg-blue-600 rounded-md px-3 py-2 font-medium">Projects</a>
+        <a href="#" class="text-gray-200 hover:bg-gray-700 bg-blue-600 rounded-md px-3 py-2 font-medium">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!--About me-->
-  
+  <main class="mt-16 md:px-20 lg:mt-32">
+    <section class="min-h-screen text-center">
+      <h2 class="text-5xl">
+        Jack Robinson
+      </h2>
+      <h3>
+        Web Development
+      </h3>
+      <h4>
+        Web developer graduated from George Brown College in 2022 with a degree in computer programming and analsys <br>
+        Goal is to controbute to a collabroative nd dynamic work environment where I can develop my skills while having a positive impact on the team
+      </h4>
+      <div class="flex justify-center mt-4">
+        <img class="justify-center rounded-full max-w-xs h-auto" src="public/pic.jpeg" layout="fill"/>
+      </div> 
+    </section>
+    <section>
+      <a href="public/Jack_Robinson_Resume.pdf" target="_blank">View Resume</a>
+    </section>
+  </main>
+
 
 <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
