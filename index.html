@@ -39,13 +39,13 @@
 
   <!-- desktop nav-->
   <nav
-    <div class="fixed top-0 w-screen flex py-3 sm:h-16 items-center justify-center bg-white sm:bg-blue-600">
+    <div class="fixed top-0 w-screen flex py-3 sm:h-16 items-center justify-center bg-white sm:bg-blue-600 z-10">
       <div class="flex space-x-4 sm:text-sm md:text-lg">
         <a href="#" class="text-gray-200 hover:bg-gray-700 bg-blue-600 rounded-md px-3 py-2 font-medium">About Me</a>
         <a href="#" class="text-gray-200 hover:bg-gray-700 bg-blue-600 rounded-md px-3 py-2 font-medium">Projects</a>
-        <a href="#" class="text-gray-200 hover:bg-gray-700 bg-blue-600 rounded-md px-3 py-2 font-medium">Contact</a>
+        <a href="#" class="text-gray-200 hover:bg-gray-700 bg-blue-600 rounded-md px-3 py-2 font-medium mr-auto">Contact</a>
       </div>
-    </div>
+    </div> 
   </nav>
 
   <main class="mt-16 md:px-20 lg:mt-32">
@@ -70,27 +70,41 @@
       <!--Projects-->
       <h1 class="flex justify-center text-3xl mb-4">Projects</h1>
       <div class="sm:grid sm:grid-cols-3 m-auto text-center gap-4">
-        <div class="p-3 shadow-lg bg-gray-100 sm:hover:scale-110 rounded-md transform-gpu">
-          <h1>Capstone</h1>
-          <h3>view repo</h3>
-          <p class="text-left ml-2">Collaborated with a team to develop a full-stack web application for managing virtual cards. Responsibilities included planning the development pipeline, utilizing agile methodologies, and resolving any difficulties or conflicts during development.</p>
-          <img class=" collapse absolute sm:visible sm:static border m-auto sm:mr-6 sm:mt-5" src="public/template.png">
-          <p>technologies: JavaScript, ReactJS, NodeJS, ExpressJS, Material UI, MongoDB</p>
+        <div class="p-3 shadow-lg bg-gray-100 sm:hover:scale-110 rounded-md sm:transform-gpu mr-5 ml-5  mb-8 sm:m-auto">
+          <a class="pointer-events-none sm:pointer-events-auto"  href="https://github.com/jack9rob/GBCSporting2021_GiveUsA" target="_blank">
+            <div>
+              <h1 class="text-2xl mb-0 sm:mb-3 text-left sm:text-center">Capstone</h1>
+              <p class="text-left ml-2">Collaborated with a team to develop a full-stack web application for managing virtual cards.</p>
+              <p class="text-left ml-2"> Responsibilities included planning the development pipeline, utilizing agile methodologies, and resolving any difficulties or conflicts during development.</p>
+              <img class=" collapse absolute sm:visible sm:static border m-auto sm:mr-6 sm:mt-5" src="public/template.png">
+              <p class="text-left text-sm mt-3 ml-2">Used: JavaScript, ReactJS, NodeJS, ExpressJS, Material UI, MongoDB</p>
+            </div>
+          </a>
+          <div class="sm:hidden text-left mt-4">
+            <a class="text-gray-200 bg-blue-600 rounded-md px-3 py-2 font-medium">View repo</a>
+          </div>
         </div>
-        <div>
-          <h1>technical support</h1>
-          <h3>view repo</h3>
-          <p>Collaborated with a team to develop a full-stack web application for managing virtual cards. Responsibilities included planning the development pipeline, utilizing agile methodologies, and resolving any difficulties or conflicts during development.</p>
-          <img class=" collapse absolute sm:visible sm:static border m-auto sm:mr-6 sm:mt-5" src="public/template.png">
-          <p>technologies: JavaScript, ReactJS, NodeJS, ExpressJS, Material UI, MongoDB</p>
-        </div>
-        <div>
-          <h1>other</h1>
-          <h3>view repo</h3>
-          <p>Collaborated with a team to develop a full-stack web application for managing virtual cards. Responsibilities included planning the development pipeline, utilizing agile methodologies, and resolving any difficulties or conflicts during development.</p>
-          <img class=" collapse absolute sm:visible sm:static border m-auto sm:mr-6 sm:mt-5" src="public/template.png">
-          <p>technologies: JavaScript, ReactJS, NodeJS, ExpressJS, Material UI, MongoDB</p>
-        </div>
+        
+        <a class="pointer-events-none sm:pointer-events-auto"  href="https://github.com/jack9rob/GBCSporting2021_GiveUsA" target="_blank">
+          <div class="p-3 shadow-lg bg-gray-100 sm:hover:scale-110 rounded-md sm:transform-gpu mr-5 ml-5 sm:m-auto">
+            <h1 class="text-2xl mb-3">Capstone</h1>
+            <h3 class="sm:hidden">view repo</h3>
+            <p class="text-left ml-2">Collaborated with a team to develop a full-stack web application for managing virtual cards.</p>
+            <p class="text-left ml-2"> Responsibilities included planning the development pipeline, utilizing agile methodologies, and resolving any difficulties or conflicts during development.</p>
+            <img class=" collapse absolute sm:visible sm:static border m-auto sm:mr-6 sm:mt-5" src="public/template.png">
+            <p class="text-left text-sm mt-3 ml-2">Used: JavaScript, ReactJS, NodeJS, ExpressJS, Material UI, MongoDB</p>
+          </div>
+        </a>
+        <a class="pointer-events-none sm:pointer-events-auto"  href="https://github.com/jack9rob/GBCSporting2021_GiveUsA" target="_blank">
+          <div class="p-3 shadow-lg bg-gray-100 sm:hover:scale-110 rounded-md sm:transform-gpu mr-5 ml-5 sm:m-auto">
+            <h1 class="text-2xl mb-3">Capstone</h1>
+            <h3 class="sm:hidden">view repo</h3>
+            <p class="text-left ml-2">Collaborated with a team to develop a full-stack web application for managing virtual cards.</p>
+            <p class="text-left ml-2"> Responsibilities included planning the development pipeline, utilizing agile methodologies, and resolving any difficulties or conflicts during development.</p>
+            <img class=" collapse absolute sm:visible sm:static border m-auto sm:mr-6 sm:mt-5" src="public/template.png">
+            <p class="text-left text-sm mt-3 ml-2">Used: JavaScript, ReactJS, NodeJS, ExpressJS, Material UI, MongoDB</p>
+          </div>
+        </a>
 
       </div>
       <!--
@@ -126,8 +140,8 @@
       -->
     </section>
 
-    <!--About me-->
-    <section class="sm:flex justify-stretch">
+    <!--Skills and Education-->
+    <section class="sm:flex justify-stretch sm:mt-16">
 
       <div>
         <h1 class="text-4xl">Education</h1>
@@ -136,19 +150,22 @@
         <p>includes touched on the software developemtn lifecycle, some testing and such with agile methodologies</p>
         <p>others are mobile developement, database design, data structures and algorithms </p>
       </div>
-      <div>
+      <div class="sm:ml-3">
         <h1 class="text-4xl"> skills</h1>
         <ul>
-          <li>Framworks</li>
+          <li>Framworks: React, Angular, Spring</li>
           <li>Database</li>
-          <li>Languages</li>
+          <li>Languages: Python, JavaScript, TypeScript, C#, Java, Php</li>
         </ul>
       </div>
+    </section>
 
+    <!--More about jack-->
+    <section id="test">
+      <h1 class="flex justify-center text-3xl mb-4 mt-16">More About Jack</h1>
     </section>
   </main>
 
-
-<script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
