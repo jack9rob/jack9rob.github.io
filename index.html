@@ -10,36 +10,40 @@
 <body>
   <!-- desktop nav-->
   <nav
-    <div class="fixed top-0 w-screen flex py-3 sm:h-16 items-center justify-center bg-white sm:bg-blue-600 z-50">
-      <div class="flex space-x-4 sm:text-sm md:text-lg">
-        <a href="#" class="text-gray-200 hover:bg-gray-700 bg-blue-600 rounded-md px-3 py-2 font-medium">About Me</a>
-        <a href="#projects" class="text-gray-200 hover:bg-gray-700 bg-blue-600 rounded-md px-3 py-2 font-medium">Projects</a>
-        <a href="#" class="text-gray-200 hover:bg-gray-700 bg-blue-600 rounded-md px-3 py-2 font-medium mr-auto">Contact</a>
+    <div class="fixed top-0 w-screen py-3 sm:h-16 bg-white sm:bg-green-400 z-50 flex justify-center align-middle">
+      <div class="flex space-x-4 sm:text-sm md:text-lg ml-4 text-center">
+        <a href="#" class="text-gray-200 hover:bg-green-500 bg-green-400  rounded-md px-3 py-2 font-medium">About Me</a>
+        <a href="#projects" class="text-gray-200 hover:bg-green-500 bg-green-400  rounded-md px-3 py-2 font-medium">Projects</a>
+        <a href="#" class="text-gray-200 hover:bg-green-500 bg-green-400  rounded-md px-3 py-2 font-medium mr-auto">Contact</a>
+        <a class="rounded hover:bg-green-500 bg-green-400 p-2 text-gray-200" href="public/Jack_Robinson_Resume.pdf" target="_blank">View Resume</a>
       </div>
     </div> 
   </nav>
 
-  <main class="mt-20 md:px-20 lg:mt-32">
+  <main class="mt-16 md:px-20 lg:mt-32">
     <section class="min-h-screen text-center">
-      <h2 class="text-5xl">
-        Jack Robinson
-      </h2>
-      <h3>
-        Web Development
-      </h3>
-      <h4>
-        Web developer graduated from George Brown College in 2022 with a degree in computer programming and analsys <br>
-        Goal is to controbute to a collabroative nd dynamic work environment where I can develop my skills while having a positive impact on the team
-      </h4>
-      <img class="justify-center rounded-full max-w-xs h-auto m-auto block mb-6" src="public/pic.jpeg" layout="fill"/>
-      <a class="mt-10 rounded bg-blue-600 p-2 text-gray-200" href="public/Jack_Robinson_Resume.pdf" target="_blank">View Resume</a>
+
+      <div class="sm:flex sm:justify-center items-center text-left mt-7">
+        <div>
+          <h2 class="text-5xl m-uato sm:ml-0 text-center sm:text-left">
+            Jack Robinson
+          </h2>
+          <h4 class="bg-green-400 text-gray-200 rounded-md p-3 w-3/4 mt-3 m-auto sm:ml-0">
+            Web developer graduated from George Brown College in 2022 with a degree in computer programming and analsys <br>
+            Goal is to controbute to a collabroative and dynamic work environment where I can develop my skills while having a positive impact on the team
+          </h4>
+        </div>
+
+        <img class="justify-center rounded-full max-w-xs h-auto m-auto block mb-6 mt-5 sm:mt-0" src="public/pic.jpeg" layout="fill"/>
+      </div>
+      
     </section>
 
     <!--Projects-->
     <section id="projects" class="pt-16">
-      <h1 class="flex justify-center text-3xl mb-4">Projects</h1>
+      <h1 class="flex justify-center text-3xl mb-4 bg-green-400 rounded-md w-2/4 m-auto p-3">Projects</h1>
 
-      <!--desktop-->
+      <!--desktop projects-->
       <div class="sm:grid sm:grid-cols-3 m-auto text-center gap-4 collapse sm:visible absolute sm:relative mt-7">
         <div class="p-3 shadow-lg bg-gray-100 sm:hover:scale-110 rounded-md sm:transform-gpu mr-5 ml-5 mb-8 sm:m-auto hover:z-30">
           <a href="https://github.com/jack9rob/GBCSporting2021_GiveUsA" target="_blank">
@@ -78,7 +82,7 @@
         </div>
       </div>
 
-      <!--mobile-->
+      <!--mobile projects-->
       <div class="sm:grid sm:grid-cols-3 m-auto text-center gap-4 sm:collapse relative sm:absolute">
         <div class="p-3 shadow-lg bg-gray-100 sm:hover:scale-110 rounded-md sm:transform-gpu mr-5 ml-5 mb-8 pb-4 sm:m-auto hover:z-30">
           <div>
@@ -118,25 +122,25 @@
       </div>
     </section>
 
-    <!--Skills and Education-->
-    <section class="sm:flex justify-stretch sm:mt-16">
-
-      <div>
+    <!--Education-->
+    <section class="sm:flex justify-stretch sm:mt-16 ml-1 sm:ml-0">
+      <div class="ml-5">
         <h1 class="text-4xl">Education</h1>
-        <h2 class="text-xl">Computer Programming and Analysis - George Brown College <p class="text-sm text-gray-500 inline ml-4">Sep 2019 - April 2022</p></h2>
-        <h3 class="text-l">GPA: 3.95 - Graduated with Honours</h3>
+        <h2 class="text-xl">Computer Programming and Analysis - Advanced Diploma with Honours</h2>
+        <h3 class="text-l">George Brown College <p class="text-sm text-gray-500 inline ml-4">Sep 2019 - April 2022</p></h3>
+        <h3 class="text-l">GPA: 3.95</h3>
         <p class="mt-2 underline">Relavent coursework:</p>
         <p class="ml-2 text-sm">Full Stack Development, Mobile Application Development, Database Design, Data Structures and Algorithms, Agile Methodologies, Devops</p>
-
       </div>
-      <div class="sm:ml-3">
-        <h1 class="text-4xl"> skills</h1>
-        <ul>
-          <li>Framworks: React, Angular, Spring</li>
-          <li>Database</li>
-          <li>Languages: Python, JavaScript, TypeScript, C#, Java, Php</li>
-        </ul>
-      </div>
+    </section>
+    <!--Skills-->
+    <section class="ml-5 sm:ml-5 mt-6">
+      <h1 class="text-4xl">Skills</h1>
+      <ul>
+        <li>Framworks: React, Angular, Spring</li>
+        <li>Database: MongoDb, SQL, MySQL</li>
+        <li>Languages: Python, JavaScript, TypeScript, C#, Java, Php</li>
+      </ul>
     </section>
 
     <!--More about jack-->
